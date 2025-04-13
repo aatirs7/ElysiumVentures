@@ -119,4 +119,53 @@ footer {
         font-size: 0.75rem;
         padding-bottom: 20px;
     }
+    /* Desktop optimization (screens wider than 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1100px; /* Increase overall container width */
+    }
+
+    .logo {
+        height: 130px; /* Larger logo for desktop */
+    }
+
+    header {
+        flex-direction: row; /* Side-by-side layout */
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    nav {
+        margin-top: 0;
+        align-self: center;
+    }
+
+    nav a {
+        font-size: 1rem; /* Slightly larger navigation links */
+        margin: 0 20px;
+    }
+
+    main {
+        padding: 80px 0; /* Increased spacing */
+    }
+
+    .intro h1 {
+        font-size: 3rem; /* Larger headline */
+    }
+
+    .intro p {
+        font-size: 1.1rem; /* Slightly larger body text */
+        line-height: 1.7;
+    }
+
+    .project-links a {
+        padding: 12px 30px; /* Slightly larger button size */
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
 }
