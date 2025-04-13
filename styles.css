@@ -7,35 +7,30 @@ body {
 }
 
 .container {
-    width: 70%;
-    margin: 0 auto;
-    padding: 50px 0;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #222;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-}
 .logo {
-    height: 80px; /* Adjust based on your preference */
+    height: 100px;
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #999;
-    font-weight: 400;
-    margin-left: 20px;
+    margin: 0 15px;
     transition: color 0.3s ease;
 }
 
@@ -48,45 +43,80 @@ main {
     border-bottom: 1px solid #222;
 }
 
-.intro h2 {
+.intro h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 .intro p {
     font-size: 1rem;
-    line-height: 1.6;
     color: #bbb;
-    max-width: 750px;
-}
-
-.project-links {
-    margin-top: 40px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
 }
 
 .project-links a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #ddd;
-    padding: 8px 18px;
+    display: inline-block;
+    padding: 10px 20px;
     border: 1px solid #444;
     border-radius: 3px;
-    margin-right: 10px;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #ddd;
+    margin: 8px;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .project-links a:hover {
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     border-color: #888;
     color: #fff;
 }
 
 footer {
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 0.85rem;
     color: #666;
-    padding-top: 25px;
+    padding-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    header {
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .project-links a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding-bottom: 20px;
+    }
 }
