@@ -166,6 +166,18 @@ footer {
     footer {
         font-size: 0.9rem;
     }
+.haybah-page-container {
+    background-color: #0d0d0d; /* same background as the main site */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.haybah-logo {
+    max-width: 50%;
+    height: auto;
+}
+
 
 }
